@@ -1,0 +1,140 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    /* % parent ka according */
+    height: 100vh;
+    /* vh screen ka according */
+    /* background-color: aquamarine; */
+}
+#back{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+#back img{
+    height: 99%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#top{
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(127, 255, 212, 0.457); */
+}
+#workingarea{
+    position: relative;
+    margin:0 auto;
+    height: 100%;
+    width: 80%;
+    max-width: 1920px;
+    /* background-color: brown; */
+}
+#nav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    width: 100%;
+}
+#nav img{
+    height: 75px;
+}
+#nleft,#nright{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#nav a{
+    pointer-events: all;
+    padding-top: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    display: flex;
+    justify-content: space-between;
+    /* background-color: pink; */
+    width: 100%;
+    /* height: 100px; */
+}
+#heroleft{
+    /* background-color: blueviolet; */
+    min-width: 50%;
+}
+#heroleft .element{
+    position: relative;
+    /* background-color: red; */
+    height: 8vw;
+    overflow: hidden;
+}
+#heroleft .element h1:nth-child(1){
+top:0;
+}
+#heroleft .element h1{
+    position: absolute;
+    top:100%;
+    left:0;
+    line-height: 0.9;
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 10vw;
+    font-family: kajiro;
+}
+#heroleft button{
+    pointer-events: all;
+    margin-top: 2vw;
+    padding:0.6vw 2.5vw;
+    color: black;
+    font-size: 3vw;
+    font-family: kajiro;
+
+}
+#heroright{
+    /* background-color: rgb(80, 226, 43); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: antiquewhite;
+    width: 18%;
+}
+#imagediv{
+    margin-top: 1vh;
+    height: 19vh;
+    width: 100%;
+    background-image: url(kikrill-balobanov-2rIs8OH5ng0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#heroright p{
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 2vh;
+    text-align: right;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 60px;
+}
